@@ -1,0 +1,19 @@
+{
+  "name": "summerjavascriptintership2019",
+  "version": "1.0.0",
+  "description": "Unit tests in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "unit",
+    "tests"
+  ],
+  "author": "Camarasan Laura",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
