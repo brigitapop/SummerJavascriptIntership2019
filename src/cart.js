@@ -22,9 +22,6 @@ module.exports = class Cart {
             throw new Exception('Quantity should be at least one!');
         }
 
-        //if (item.price < 1 && item.quantity < 2)
-        //    throw new Exception('For items that cost less then $1 you should buy 2;');
-
         this._items.push(item);
         this._lastUpdate = this._timeService.now();
     }

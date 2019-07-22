@@ -25,10 +25,9 @@ describe('Cart', function() {
                 price: 12, 
                 active: true
             }));
-            assert.fail('should throw exception');
-        } catch {
+        } catch { return; }
 
-        }
+        assert.fail('should throw exception')
     });
 
     it('will not allow adding items with quantities less then 2 if price is less then 1', function() {
@@ -39,10 +38,9 @@ describe('Cart', function() {
                 price: .5, 
                 active: true
             }));
-            assert.fail('should throw exception');
-        } catch {
+        } catch { return; }
 
-        }
+        assert.fail('should throw exception');
     });
 
     it('will calculate the price of the items in the cart when adding multiple items', function() {
